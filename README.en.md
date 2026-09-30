@@ -42,6 +42,18 @@ foot, next to the settings gear, and never needs a trip to Settings.
 
 Requirements: DSH `>= 0.2.0-rc.2`, Node.js `>= 20`.
 
+**In one command.** `dsh plugin` is a pnpm wrapper: it clones the public repository and
+installs the plugin into a profile.
+
+```bash
+dsh plugin --profile web add github:execrat1on/dsh-balance#v1.0.0
+```
+
+`web` is the profile started by `dsh web` — substitute yours if it is named differently.
+It needs `git` on `PATH` (portable MinGit works on Windows). Verified: installing through
+pnpm 12.6.0 brings in `dsh-balance 1.0.0` together with `client.js`, `cordis.patch.yml`,
+`index.js`, `icon.svg` and `locale/`.
+
 **Through the plugin manager.** Settings → Plugins → install a bundle, source `GitHub`,
 repository `execrat1on/dsh-balance`. The clone is done by `git`, so it must be on `PATH`.
 
@@ -130,6 +142,11 @@ window, reading the key from the environment and from `.credentials.yaml`, parsi
 balance response, HTTP failures, the route cache and its loopback filter, the slot
 registration, all three chip states, the yellow/grey mark, the three locale tables, plus
 "the stylesheet hard-codes no colour" and "the browser half never knows the key".
+
+## See also
+
+* **[dsh-locale-ru](https://github.com/execrat1on/dsh-locale-ru)** — Russian for the whole
+  Harness UI: 57 namespaces, 2588 strings, installed with the same one-liner.
 
 ## License
 
