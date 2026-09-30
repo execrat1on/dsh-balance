@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="DSH Balance">
+  <rect x="5" y="16" width="54" height="36" rx="9" fill="#2477bf"/>
+  <rect x="5" y="16" width="54" height="9" rx="4.5" fill="#1b5d97"/>
+  <rect x="40" y="30" width="19" height="12" rx="4" fill="#ffd166"/>
+  <circle cx="49.5" cy="36" r="2.4" fill="#1b5d97"/>
+  <circle cx="47" cy="15" r="11" fill="#ffb020" stroke="#f7f9fc" stroke-width="2.5"/>
+  <rect x="45.5" y="9" width="3" height="7.5" rx="1.5" fill="#3d2a05"/>
+  <circle cx="47" cy="19.4" r="1.7" fill="#3d2a05"/>
+</svg>

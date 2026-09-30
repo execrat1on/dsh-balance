@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "余额",
+    "description": "在侧边栏底部显示 DeepSeek API 余额；高峰时段令牌价格翻倍时显示感叹号。"
+  }
+}

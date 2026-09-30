@@ -1,0 +1,53 @@
+{
+  "name": "dsh-balance",
+  "version": "1.0.0",
+  "description": "DeepSeek API balance in the DSH sidebar, with a peak / off-peak pricing marker",
+  "license": "MIT",
+  "author": "execrat1on (https://github.com/execrat1on)",
+  "homepage": "https://github.com/execrat1on/dsh-balance#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/execrat1on/dsh-balance.git"
+  },
+  "bugs": {
+    "url": "https://github.com/execrat1on/dsh-balance/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "balance",
+    "sidebar",
+    "billing"
+  ],
+  "type": "module",
+  "icon": "./icon.svg",
+  "engines": {
+    "dsh": ">=0.2.0-rc.2",
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node test/verify.mjs"
+  },
+  "meta": {
+    "title": "Balance",
+    "description": "Shows the remaining DeepSeek API balance in the sidebar foot and marks peak hours, when tokens cost twice as much."
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-sidebar"]
+    }
+  }
+}

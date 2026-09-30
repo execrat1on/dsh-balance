@@ -1,0 +1,18 @@
+# dependencies
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# logs and editor junk
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# local secrets — never commit a real API key
+.env
+.env.*
+.credentials.yaml
